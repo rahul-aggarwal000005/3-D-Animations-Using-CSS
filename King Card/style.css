@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #262626;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #262626;
+    padding-top: 2rem ;
+    align-items: center;
+}
+
+.deck{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: #262626;
+}
+
+.card{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(image.png);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    transition: .5s;
+    transform-origin: bottom;
+    border-radius: 10px;
+}
+
+.card:nth-child(1){
+    transform: translate(0px,0px);
+}
+.card:nth-child(2){
+    transform: translate(2px,2px);
+}
+.card:nth-child(3){
+    transform: translate(4px,4px);
+}
+.card:nth-child(4){
+    transform: translate(6px,6px);
+}
+.card:nth-child(5){
+    transform: translate(8px,8px);
+}
+.card:nth-child(6){
+    transform: translate(10px,10px);
+}
+.card:nth-child(6){
+    transform: translate(11px,11px);
+}
+
+.deck:hover .card:nth-child(1){
+    transform: rotate(-45deg) translate(0px,0px);
+}
+.deck:hover .card:nth-child(2){
+    transform: rotate(-30deg) translate(0px,0px);
+}
+.deck:hover .card:nth-child(3){
+    transform: rotate(-15deg) translate(0px,0px);
+}
+.deck:hover .card:nth-child(4){
+    transform: rotate(0deg) translate(0px,0px);
+}
+.deck:hover .card:nth-child(5){
+    transform: rotate(15deg) translate(0px,0px);
+}
+.deck:hover .card:nth-child(6){
+    transform: rotate(30deg) translate(0px,0px);
+}
+.deck:hover .card:nth-child(7){
+    transform: rotate(45deg) translate(0px,0px);
+}
+.deck .card:hover{
+    z-index: 1;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, .5);
+}
